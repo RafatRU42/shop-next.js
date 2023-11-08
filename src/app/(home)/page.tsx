@@ -1,16 +1,10 @@
 import Image from 'next/image'
+import HeroSlider from './HeroSlider'
 
 export default function Home() {
   return (
    <div className=''>
-	this is main layout
-	<button className="btn">Button</button>
-<button className="btn btn-neutral">Neutral</button>
-<button className="btn btn-primary">Primary</button>
-<button className="btn btn-secondary">Secondary</button>
-<button className="btn btn-accent">Accent</button>
-<button className="btn btn-ghost">Ghost</button>
-<button className="btn btn-link">Link</button>
+		<HeroSlider></HeroSlider>
    </div>
   )
 }
