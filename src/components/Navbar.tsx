@@ -2,12 +2,17 @@
 
 import { afterNavData, beforeNavData } from '@/data/navData'
 import useTheme from '@/hooks/useTheme';
+import { AuthContext } from '@/providers/AuthProvider';
 // import ThemeProvider from '@/providers/ThemeProvier';
 import Link from 'next/link';
 import React from 'react'
+import {useContext} from 'react'
+import useAuth from '@/hooks/useAuth'
 
 const Navbar = () => {
-	const user = null;
+	const {user } = useAuth()
+	console.log('user',user)
+	// const user = null
 
 	const navInfo = user ? afterNavData : beforeNavData;
 	// const {theme, toggleTheme} = useTheme()
